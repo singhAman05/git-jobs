@@ -1,0 +1,9 @@
+﻿{
+  "agentId": 2,
+  "agentName": "New_main_test_runner",
+  "poolId": 1,
+  "poolName": "Default",
+  "serverUrl": "https://pipelinesghubeus26.actions.githubusercontent.com/i0MGS70mvHZpOYAnYU3K2uJDMH0A3RXFodaDiqhH7okWTyafDJ/",
+  "gitHubUrl": "https://github.com/singhAman05/github_actions_practice",
+  "workFolder": "_work"
+}
