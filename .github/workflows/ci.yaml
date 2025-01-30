@@ -1,13 +1,13 @@
-name: Merge b1 to main
+name: Merge main-b1 to main
 
 on:
   push:
     branches:
-      - b1
+      - main-b1
 
 jobs:
   merge:
-    runs-on: self-hosted
+    runs-on: ubuntu-latest
 
     steps:
       - name: Checkout the repository
@@ -24,7 +24,7 @@ jobs:
       - name: Checkout the main branch
         run: git checkout main
 
-      - name: Merge b1 into main
+      - name: Merge main-b1 into main
         run: |
-          git merge b1
+          git merge main-b1
           git push origin main
