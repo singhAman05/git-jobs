@@ -17,14 +17,20 @@ jobs:
         run: |
           git config --global user.name "GitHub Action"
           git config --global user.email "action@github.com"
+          echo "1"
 
       - name: Fetch all branches
-        run: git fetch --all
+        run: |
+          git fetch --all
+          echo "4"
 
       - name: Checkout the main branch
-        run: git checkout main
+        run: |
+           git checkout main
+           echo "3"
 
       - name: Merge main-b1 into main
         run: |
           git merge main-b1
           git push origin main
+          echo "2"
